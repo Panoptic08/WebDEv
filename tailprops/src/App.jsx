@@ -11,6 +11,7 @@ function App() {
     <h1 className='bg-blue-400 text-black p-4 rounded-xl'>Hello Tailwind</h1>
     <Compo name = "Sign Up" emp = "Already have an account?: create it" go = "Get Started"/>      
     <Compo name = "Log In" emp = ""/>      
+    <Compo name = "Log In" emp = ""/>      
     </>
   )
 }
