@@ -7,7 +7,10 @@ function App() {
   let [counter,updateme] = useState(0)
 
   function add(){
-    if(counter<20){updateme(counter+1)}
+    if(counter<20){
+      updateme((counter)=>counter+1)
+      updateme(counter+1)
+    }
     else{
       alert("Exceeded 20");
     }
