@@ -8,10 +8,11 @@ import './App.css'
 
 function App() {
 
-  const[counter, count] = useState(0)
-  function count(){
-    counter++;
-  }
+  // const[counter, count] = useState(0)
+  // function count(){
+  //   // counter++;
+  // }
+  let count = 0;
   
 
   return (
@@ -26,9 +27,9 @@ function App() {
    
     <div className='flex justify-center '>
       
-      <button className='bg-white rounded-xl h-15 duration-200 border-4 border-black hover:scale-105' onClick={count}><img src="/images/heart.png" alt="" className=' bg-white h-8 '/>
+      <button className='bg-white rounded-xl h-15 duration-200 border-4 border-black hover:scale-105' ><img src="/images/heart.png" alt="" className=' bg-white h-8 '/>
       </button>
-      <label>{counter}</label>
+      <label>{count}</label>
     
     </div>
     
