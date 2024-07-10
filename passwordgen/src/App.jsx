@@ -5,6 +5,7 @@ function App() {
   const[password, generate] = useState("");
   const[numbers,allownumers] = useState(false);
   const[chars,allowchars] = useState(false);
+// made a few changes
 
   const Gen = useCallback(
     ()=> {
