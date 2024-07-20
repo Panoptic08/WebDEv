@@ -1,12 +1,19 @@
 import { useState, useEffect } from 'react';
 
-const useCustomQuote = () => {
-  const[data, setdata] = useState({})
-  useEffect(()=>{
-    fetch('https://zenquotes.io/api/random').then( response=>response.json() ).then(data=>setdata(data[0]))
+function useFetchQuote() {
+  const [quote, setQuote] = useState(null);
 
-  },[])
-  return data;
-};
+  useEffect(() => {
+    fetch('https://zenquotes.io/api/random')
+      .then((response) => response.json())
+      .then((data) => {
+        const quoteData = data[0];
+        const formattedQuote = `${quoteData.q} - ${quoteData.a}`;
+        setQuote(formattedQuote);
+      });
+  }, []);
 
-export default useCustomQuote;
+  return quote;
+}
+
+export default useFetchQuote;

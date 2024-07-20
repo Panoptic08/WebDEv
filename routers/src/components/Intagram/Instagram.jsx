@@ -2,11 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
 function Instagram() {
     const data = useLoaderData()
-    // const[data, setdata] = useState(0)
-    // useEffect(()=>{
-    //     fetch('https://api.github.com/users/Panoptic08').then((respose)=> respose.json()).then((data)=>{setdata(data) })    
-
-    // },[])
 
     return (
         <div className='text-center text-2xl bg-black text-white h-auto w-auto'>
@@ -18,7 +13,7 @@ function Instagram() {
 
 export default Instagram
 
-export const loadtooptimize = async ()=> {
+export const loadtooptimize = async ()=> {  
     const response = await fetch('https://api.github.com/users/Panoptic08')
     return response.json()
 }

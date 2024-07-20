@@ -17,7 +17,7 @@ const router = createBrowserRouter(
 
     <Route  path=''  element={<Home />}/>  {/*Reason for this not taking a path*/}
     <Route  path='About'  element={<About />}>
-    <Route path='Create' />
+    <Route path='Create' /> 
     </Route>
     <Route  path='Contact'  element={<Contact />}/>
     <Route  path='Create/:userid'  element={<Create />}/>   
