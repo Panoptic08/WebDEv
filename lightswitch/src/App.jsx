@@ -13,7 +13,7 @@ function App() {
   const Darktheme  = ()=>{
     setTheme("dark")
   }
-
+// added a new feature.
   useEffect(()=>{
     document.querySelector("HTML").classList.remove("light", "dark")
 
