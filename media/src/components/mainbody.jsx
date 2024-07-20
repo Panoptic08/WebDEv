@@ -18,7 +18,7 @@ function MainBody() {
                     onChange={(e) => { setname(e.target.value) }}
                     placeholder='Enter your GitHub username:'
                 />
-                <Link to={`/content/${name}`}>
+                <Link to={`/Render/${name}`}>
                     <button
                         className='bg-pink-300 w-32 h-10 rounded-xl hover:scale-110 hover:text-gray-700 hover:border-black'
                         style={{ marginTop: "20%" }}
